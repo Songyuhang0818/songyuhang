@@ -203,6 +203,50 @@ img{
     top:36px;
     background:#e0e0e0;
 }
+.search{
+    width: 296px;
+    height: 20px;
+    float:right;
+    margin-top: 20px;
+    position: relative;
+}
+.search-txt{
+    width: 222px;
+    height: 48px;
+    border:1px solid #e0e0e0;
+    outline:none;
+    padding:0 10px;
+    float: left;
+
+}
+.search-btn{
+    width: 52px;
+    height: 50px;
+    float: left;
+    border: 1px solid #e0e0e0;
+    border-left: 0;
+    cursor: pointer;
+    position: relative;
+    background: transparent;
+    outline: none;
+    z-index:1;
+}
+.search-btn:hover+i{
+    color:#fff;
+    background: #ff6700;
+}
+.icon-search{
+    position: absolute;
+    right:0;
+    top: 0;
+    width: 52px;
+    height: 50px;
+    display: block;
+    line-height: 50px;
+    text-align: center;
+
+    /*color:#e0e0e0;*/
+}
 /*header 结束*/
 /*轮播图开始*/
 .slide{
@@ -239,4 +283,24 @@ img{
 .next-btn{
     right:0px;
 
+}
+.btns li{
+    width: 6px;
+    height: 6px;
+    background:#232429;
+    border: 2px solid #65666b;
+    float: left;
+    margin-right: 5px;
+    border-radius:50%;
+    cursor: pointer;
+}
+.btns li:hover{
+    background: #898a8e;
+    border:2px solid #4f4e56;
+}
+.btns{
+    width: 128px;
+    position: absolute;
+    right: 0px;
+    bottom:20px;
 }
