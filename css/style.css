@@ -104,6 +104,8 @@ img{
     .header {
         height: 100px;
         position: relative;
+        margin-right: auto;
+        margin-left: auto;
     }
     .header-logo{
         width: 55px;
@@ -205,7 +207,7 @@ img{
 }
 .search{
     width: 296px;
-    height: 20px;
+    height: 50px;
     float:right;
     margin-top: 20px;
     position: relative;
@@ -217,7 +219,7 @@ img{
     outline:none;
     padding:0 10px;
     float: left;
-
+    position: relative;
 }
 .search-btn{
     width: 52px;
@@ -235,9 +237,9 @@ img{
     color:#fff;
     background: #ff6700;
 }
-.icon-search{
+.icon-search {
     position: absolute;
-    right:0;
+    right: 0;
     top: 0;
     width: 52px;
     height: 50px;
@@ -245,7 +247,34 @@ img{
     line-height: 50px;
     text-align: center;
 
-    /*color:#e0e0e0;*/
+}
+.search .search-hot-words{
+    width: 174px;
+    height: 21px;
+    margin: 0px;
+    position: absolute;
+    top: 14px;
+    right: 62px;
+    z-index: 2;
+    text-align: right;
+
+
+
+}
+.search-hot-words a{
+    display: inline-block;
+    margin-left: 5px;
+    padding: 0 5px;
+    font-size: 12px;
+    background: #eee;
+    color: #757575;
+
+
+
+}
+.search-hot-words a:hover{
+    background: #ff6700;
+    color:#ffffff;
 }
 /*header 结束*/
 /*轮播图开始*/
