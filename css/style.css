@@ -155,7 +155,7 @@ img{
         box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.15);
         overflow: hidden;
         display: none;
-        z-index: 10;
+        z-index: 999;
     }
     .sub-menu ul{
         width:1224px;
@@ -168,6 +168,7 @@ img{
     float: left;
     text-align: center;
     position: relative;
+
 }
 .flags{
     height: 17px;
@@ -280,11 +281,11 @@ img{
 /*轮播图开始*/
 .slide{
     position: relative;
-    height: 500px;
+    height: 460px;
 }
 .img-box img{
     width: 1226px;
-    height: 500px;
+    height: 460px;
     position: absolute;
     left:0;
     top:0;
@@ -332,4 +333,101 @@ img{
     position: absolute;
     right: 0px;
     bottom:20px;
+}
+.slide-category{
+    width: 234px;
+    height: 460px;
+    z-index: 21;
+    font-size: 14px;
+    display: block;
+    position: absolute;
+
+}
+.slide-category-list{
+    height: 420px;
+    border: 0;
+    margin: 0;
+    padding: 20px 0;
+
+    background: #333;
+    background: rgba(0,0,0,0.6);
+
+}
+.category-item{
+    width: 234px;
+    height: 42px;
+    display:block;
+}
+.slide-category-list .title{
+    position: relative;
+    display: block;
+    padding-left: 30px;
+    height: 42px;
+    line-height: 42px;
+    color: #fff;
+}
+.category-item:hover{
+    background: #ff6700;
+}
+.icon-arrow{
+    float:right;
+    margin-right: 15px;
+}
+.sub-list{
+    background: #fff;
+    position: absolute;
+    top:0;
+    left: 234px;
+    height: 100%;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.18);
+    display: none;
+}
+.category-item:hover .sub-list{
+    display: block;
+}
+.sub-list-3{
+    width: 795px;
+
+}
+.sub-list ul{
+    height: 460px;
+    float: left;
+    width: 265px;
+}
+.sub-list li{
+
+    overflow: hidden;
+    padding: 18px 15px 18px 20px;
+}
+.sub-list a{
+    float: left;
+
+
+}
+.list-img{
+    vertical-align: middle;
+}
+.list-title{
+    color: #333;
+    font-size: 14px;
+
+}
+.list-img-box{
+    width: 170px;
+}
+.list-img-box:hover .list-title{
+    color: #ff6700;
+}
+.buy-btn{
+    width: 58px;
+    height: 22px;
+    line-height: 22px;
+    border: 1px solid #ff6700;
+    color: #ff6700;
+    font-size: 12px;
+    text-align: center;
+    line-height: 22px;
+    margin-top:10px;
+
 }
