@@ -12,10 +12,14 @@ a{
 img{
     border: 0;
 }
-
+body{
+    width:1349px;
+    height: 5874px;
+    margin: 0 auto;
+}
 .wrapper{
     width: 1226px;
-    height: 644px;
+    height: 600px;
     margin: 0 auto;
 }
 /*公共样式*/
