@@ -728,3 +728,254 @@
     color: #ff6700;
     font-size: 14px;
 }
+.review-item:hover{
+    box-shadow: 0px 7px 15px 5px rgba(0,0,0,0.1);
+    /*z-index: 4;*/
+}
+.review-item:hover{
+    animation: move 0.1s ease-in forwards;
+}
+@keyframes move {
+    100%{
+        transform:translate(0px,-3px);
+    }
+}
+/*内容开始*/
+.container-box{
+    height: 450px;
+}
+.container-box .con-item{
+    width: 296px;
+    height: 420px;
+    background: #ffffff;
+    margin-left: 14px;
+    float: left;
+    position: relative;
+}
+.container-box .con-fist-item{
+    margin-left: 0;
+}
+.book{
+    border-top:1px solid #ffac13;
+    color: #ffac13;
+}
+.con-item:hover{
+    box-shadow: 0px 7px 15px 5px rgba(0,0,0,0.1);
+}
+.con-item:hover .con-prev-btn{
+    display: block;
+}
+.con-item:hover .con-next-btn {
+    display: block;
+}
+
+.con-item:hover{
+    animation: move 0.1s ease-in forwards;
+}
+@keyframes move {
+    100%{
+        transform:translate(0px,-3px);
+    }
+}
+.con-item h2{
+    margin: 45px 0 18px;
+    text-align: center;
+    height: 24px;
+    line-height: 24px;
+    font-size: 16px;
+    font-weight: 400;
+}
+.con-carousel li{
+    width: 296px;
+    float: left;
+}
+.con-name{
+    display: block;
+    font-size: 20px;
+    color: #333;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.con-desc{
+    font-size: 12px;
+    color: #b0b0b0;
+    text-align: center;
+    display: block;
+    margin:0 48px 10px;
+    height: 40px;
+    line-height: 20px;
+    overflow: hidden;
+}
+
+.con-price{
+    display: block;
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+    margin: 0 10px 15px;
+    height: 21px;
+}
+.con-front{
+    color:#ff920f;
+    border: 1px solid #ff920f;
+    width: 118px;
+    height: 28px;
+    font-size: 12px;
+    line-height: 28px;
+    display: block;
+}
+
+.con-front:hover{
+    color: #fff;
+    background-color: #ff920f;
+    border-color: #ff920f;
+}
+.con-pic{
+    display: block;
+    text-align: center;
+}
+
+.con-carousel{
+    overflow: hidden;
+}
+.carousel-box{
+    width: 888px;
+    overflow: hidden;
+}
+.con-btn-box{
+    /*text-align: center;*/
+    position: absolute;
+    bottom: 15px;
+    left:50%;
+    margin-left: -56px;
+}
+.con-btn-box-four{
+    margin-left:-75px;
+}
+.con-btn-box li{
+    width: 10px;
+    height: 10px;
+    padding: 10px;
+    margin: 0 2px;
+    display: inline-block;
+    cursor: pointer;
+}
+.con-btn-box span{
+    width: 6px;
+    height: 6px;
+    display: inline-block;
+    background: #b0b0b0;
+    border-radius: 50%;
+    border:2px solid #fff;
+}
+.btn-active span{
+    background: #fff;
+    border:2px solid #ff6700;
+}
+.con-prev-btn,.con-next-btn{
+    width: 20px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    background: #e0e0e0;
+    color: #fff;
+    position: absolute;
+    top:50%;
+    font-weight: bold;
+    display: none;
+}
+.con-prev-btn{
+    left:0px;
+}
+.con-next-btn{
+    right: 0;
+}
+.con-prev-btn:hover,.con-next-btn:hover{
+    background: #b0b0b0;
+    cursor: pointer;
+
+}
+.carousel-box-four{
+    width: 1184px;
+}
+
+
+/*内容结束*/
+/*视频开始*/
+.more-box-more{
+    position: absolute;
+    top: 0;
+    right: 0;
+
+}
+.more-link{
+    font-size: 16px;
+    line-height: 58px;
+    color: #424242;
+    display: block;
+}
+.icon-click{
+    width: 12px;
+    height: 12px;
+    padding: 4px;
+    margin-left: 8px;
+    border-radius: 16px;
+    font-size: 12px;
+    line-height: 12px;
+    background: #b0b0b0;
+    color: #fff;
+}
+.video{
+    height: 285px;
+    padding: 0px;
+}
+.video-list {
+    width: 1240px;
+    height: 285px;
+    margin: 0;
+    padding: 0;
+}
+.video-item{
+    position: relative;
+    float: left;
+    width: 296px;
+    height: 285px;
+    margin-left: 14px;
+    margin-bottom: 14px;
+    text-align: center;
+    background: #fff;
+}
+.video-item-first{
+    margin-left: 0px;
+}
+.video-item .figure-img {
+    position: relative;
+    width: 296px;
+    height: 180px;
+    margin: 0 0 28px;
+}
+.play-video{
+    display: block;
+    color:#757575;
+}
+.play-video:hover{
+    color: #ff6700;
+}
+.play{
+    position: absolute;
+    left: 20px;
+    bottom: 10px;
+    width: 32px;
+    height: 20px;
+    border: 2px solid #fff;
+    border-radius: 12px;
+    background-color: rgba(0,0,0,0.6);
+    overflow: hidden;
+    color: #fff;
+}
+.video-item .play i {
+    font-size: 20px;
+    line-height: 20px;
+}
+/*视频结束*/
