@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .on-error{
+            background:#FFE0E9 url("reg3.gif")0 50% no-repeat;
+            padding-left: 30px;
+            font-size: 12px;
+        }
+        .on-success{
+            background:#FFE0E9 url("reg4.gif")0 50% no-repeat;
+            padding-left: 30px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+<div class="int">
+    <label for="username">用户名:</label>
+    <input type="text" id="username" class="required" />
+    <span>*</span>
+    <span class="on-error">请输入至少6位的用户名.</span>
+    <span class="on-success">输入正确</span>
+</div>
+<div class="int">
+    <label for="email">邮箱:</label>
+    <input type="text" id="email" class="required" />
+    <span>*</span>
+    <span class="on-error">请输入正确的E-Mail地址.</span>
+    <span class="on-success">输入正确</span>
+</div>
+<div class="int">
+    <label for="personinfo">个人资料:</label>
+    <input type="text" id="personinfo" />
+</div>
+<div class="sub">
+    <input type="submit" value="提交" id="send"/>&nbsp<input type="reset" id="res"/>
+</div>
+<script src="../jquery/jquery-1.12.4.js"></script>
+<script>
+    $('.required').on('focus',function () {
+        $(this).siblings('on-error').show();
+    }).on('keyup',function () {
+        var $this=$(this);
+        if($this.val().length>=6){
+            this.siblings()
+        }
+    })
+</script>
+</body>
+</html>
