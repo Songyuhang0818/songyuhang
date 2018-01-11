@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="div1">adas</div>
+<ul>
+    <li>001</li>
+    <li class="aa">002</li>
+    <li class="aa">003</li>
+    <li>004</li>
+</ul>
+<script>
+function $(selector,context){
+    return new Jquery(selector,context);}
+function Jquery(selector,context){
+    if(typeof selector=='string'){
+        if(selector.charAt(0)=='#'){
+            return document.getElementById(selector.substring(1));
+        }else if(selector.charAt(0)=='.'){
+            return getEleByClassName(selector.substring(1));
+        }
+    }else if(typeof selector=="function"){
+        addEvent(document,'DomContentLoaded',selector,false);
+    }
+}
+Jquery.prototype.on=function (type,fn) {
+    for(var i=0;i<this.element.length;i++){
+        addEvent(this.element[i],type,fn.flase);
+    }
+    return this;
+};
+Jquery.prototype.css=function (str1,str2) {
+    for(var i=0;i<this.element.lenth;i++){
+        if(typeof str1=='string'&&typeof str2=='string'){
+            this.element[i].style[str1]=str2;
+        }else if(typeof str11=='object'&&typeof str2=='undefined'){
+            for(key in str1){
+                this.element[i].style[key]=str1[key];
+            }
+        }
+    }
+    return this
+}
+function addEvent(elem,type,fn,flag) {
+if(elem.addEventListener){
+    elem.addEventListener(type,fn,flag);
+}else{
+    elem.attachEvent('on'+type,function () {
+        fn.call(elem);
+    })
+}
+}
+</script>
+</body>
+</html>

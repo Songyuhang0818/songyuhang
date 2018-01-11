@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #div0{
+            width: 800px;
+            height: 400px;
+        }
+        #div0 div{
+            float: left;
+            text-decoration:blink ;
+            text-align: center;
+            line-height: 200px;
+        }
+        #div1{
+            width: 200px;
+            height: 200px;
+            margin-left:10px ;
+            border: 10px solid blue;
+            border-radius: 50%;
+            position: relative;
+
+        }
+        #div1::after{
+            content:'';
+            width: 200px;
+            height: 200px;
+            border: 10px solid transparent;
+            border-right-color:blue ;
+            border-radius: 50%;
+            position: absolute;
+            left:-10px;
+            top:-10px;
+            z-index: 1;
+
+        }
+        #div2{
+            width: 200px;
+            height: 200px;
+            margin-left:10px ;
+            border: 10px solid black;
+            border-radius: 50%;
+            position: relative;
+        }
+        #div2::after{
+            content:'';
+            width: 200px;
+            height: 200px;
+            border: 10px solid transparent;
+            border-bottom-color: black;
+            border-right-color: black;
+            border-radius: 50%;
+            position: absolute;
+            left: -10px;
+            top:-10px;
+            z-index: 1;
+        }
+        #div3{
+            width: 200px;
+            height: 200px;
+            margin-left:10px ;
+            border: 10px solid red;
+            border-radius: 50%;
+            position: relative;
+        }
+        #div3::after{
+            content:'';
+            width: 200px;
+            height: 200px;
+            border: 10px solid transparent;
+            border-bottom-color:red ;
+            border-radius: 50%;
+            position: absolute;
+            left: -10px;
+            top: -10px;
+            z-index: 3;
+        }
+        #down{
+            position: absolute;
+            left: 100px;
+            top: 100px;
+        }
+        #div4{
+            width: 200px;
+            height: 200px;
+            margin-left:10px ;
+            border: 10px solid yellow;
+            border-radius: 50%;
+            position: relative;
+
+        }
+        #div4::after{
+            content:'';
+            width: 200px;
+            height: 200px;
+            border: 10px solid yellow;
+            border-radius: 50%;
+            position: absolute;
+            left: -10px;
+            top: -10px;
+
+        }
+        #div5{
+            width: 200px;
+            height: 200px;
+            margin-left:10px ;
+            border: 10px solid green;
+            border-radius: 50%;
+            position: relative;
+        }
+        #div5::after{
+            content:'';
+            width: 200px;
+            height: 200px;
+            border: 10px solid transparent;
+            border-left-color: green;
+            border-radius: 50%;
+            position: absolute;
+            left: -10px;
+            top: -10px;
+            z-index: 2;
+        }
+        .blink{
+            -webkit-text-decoration: blink;
+        }
+    </style>
+</head>
+<body>
+<div id="div0">
+    <div id="div1"><span class="blink">圣</span></div>
+    <div id="div2"><span>诞</span></div>
+    <div id="div3"><span>节</span></div>
+    <div id="down">
+        <div id="div4"><span>快</span></div>
+        <div id="div5"><span>乐</span></div>
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function Person(n,age) {
+        this.name=n;
+        this.age=age;
+
+    }
+    Person.prototype.eat=function () {
+        console.log(this.name="is eating...");
+    }
+    var p1=new Person('zhang',20);
+    var p2=new Person('lisi',10);
+    console.log(p1.name);
+    console.log(p2.name);
+    p1.eat()
+    p2.eat()
+</script>
+
+</body>
+</html>
