@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>520</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background: #000;
+        }
+        #cvs{
+            background: #fff;
+        }
+    </style>
+</head>
+<body>
+<canvas id="cvs" width="1500" height="800">
+
+</canvas>
+<script>
+    var oCvs = document.querySelector('#cvs');
+    var cvs = oCvs.getContext('2d');
+    /*cvs.fillStyle='#FF0000';
+     cvs.fillRect(0,0,80,100);*/
+    //字体变色
+    function changeColor(){
+        cvs.beginPath();
+        cvs.fillStyle="#fff";
+        cvs.fillRect(160,60,1200,700);cvs.clearRect(160,60,1200,700);
+        cvs.stroke();cvs.beginPath();
+        cvs.moveTo(300,100);cvs.lineTo(1200,100);
+        cvs.lineTo(1200,600);cvs.lineTo(300,600);
+        cvs.closePath();
+        cvs.moveTo(600,100);cvs.lineTo(600,600);
+        cvs.moveTo(900,100);cvs.lineTo(900,600);
+        cvs.moveTo(450,260);cvs.lineTo(750,260);
+        cvs.moveTo(300,440);cvs.lineTo(500,440);
+        cvs.moveTo(750,440);cvs.lineTo(900,440);
+        cvs.moveTo(1050,220);cvs.lineTo(1050,480);
+        var color="yellow|#2196f3|hotpink|#f00|#0f0";
+        color=color.split("|");
+        cvs.strokeStyle=color[parseInt(Math.random() * color.length)];
+        cvs.lineWidth = 50 ;
+        cvs.stroke();
+    }
+    var timerChangeColor = setInterval("changeColor()",300);
+    oCvs.onclick = function () {
+        timerChangeColor = setInterval("changeColor()",300);
+    }
+
+</script>
+
+</body>
+</html>
