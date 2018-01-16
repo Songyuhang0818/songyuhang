@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+        margin: 0;
+        padding:0;
+        }
+        #cvs{
+        background: #98E0E6;
+        }
+    </style>
+</head>
+<body>
+<canvas id="cvs" width="1000px" height="1000px"></canvas>
+<script>
+    var oCvs=document.getElementById('cvs');
+    var ctx=oCvs.getContext('2d');
+    ctx.strokeStyle='red';
+    ctx.lineWidth=1;
+    ctx.beginPath();
+
+    for (var i=0;i<60;i++){
+        ctx.moveTo(500,500);
+        ctx.arc(500,500,250,6*i*Math.PI/180,6*(i+1)*Math.PI,false);
+
+    }
+    ctx.stroke();
+    ctx.closePath()
+    ctx.beginPath();
+    ctx.fillStyle=('#98E0E6');
+    ctx.arc(500,500,245,0,Math.PI*2,false);
+    ctx.fill();
+    ctx.closePath()
+    ctx.beginPath();
+    ctx.moveTo(500,500);
+    for (var i=0;i<=12;i++){
+        ctx.arc(500,500,250,0,30*i*Math.PI/180,false);
+        ctx.lineTo(500,500);
+    }
+    ctx.stroke();
+    ctx.beginPath();
+    ctx.fillStyle=('#98E0E6');
+    ctx.arc(500,500,240,0,Math.PI*2,false);
+    ctx.fill();
+    ctx.closePath();
+    ;
+    var Timer=setInterval(function () {
+        var d=new Date();
+        var h=((d.getHours()+d.getMinutes()/60+d.getSeconds()/3600)*30-90)*Math.PI/180
+        var m=((d.getMinutes()+d.getSeconds()/60)*6-90)*Math.PI/180;
+        var s=(d.getSeconds()*6-90)*Math.PI/180;
+        ctx.clearRect(350,350,300,300)
+//    时针
+        ctx.beginPath();
+        ctx.strokeStyle='#ee0000';
+        ctx.lineWidth=10;
+        ctx.moveTo(500,500);
+        ctx.arc(500,500,100,h,h);
+        ctx.stroke();
+        ctx.closePath();
+//    分针
+        ctx.beginPath();
+        ctx.strokeStyle='#eefe00';
+        ctx.lineWidth=8;
+        ctx.moveTo(500,500);
+        ctx.arc(500,500,120,m,m);
+        ctx.stroke();
+        ctx.closePath();
+//    秒针
+        ctx.beginPath();
+        ctx.strokeStyle='#ee40fe';
+        ctx.lineWidth=6;
+        ctx.moveTo(500,500);
+        ctx.arc(500,500,150,s,s);
+        ctx.stroke();
+        ctx.closePath();
+
+
+    },1);
+</script>
+</body>
+</html>

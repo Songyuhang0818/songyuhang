@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #div1{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<button>随机彩票</button>
+<div id="div1">
+</div>
+<script>
+    var oDiv1=document.getElementById('div1');
+    var oButton=document.getElementsByTagName('button')[0];
+    var oBj={};
+    oButton.onclick=function () {
+        oDiv1.style.display = 'block';
+        var arr = [];
+        var random = Math.random();
+        for (var i = 0; i < 7; i++) {
+            var num = parseInt(Math.random() * 35 + 1);
+            arr.push(num);
+        }
+        history.pushState(arr, '');
+        oDiv1.innerHTML = arr;
+    }
+    window.onpopstate = function(e){
+//        console.log(e.state);
+        oContent.innerHTML = e.state;
+
+    }
+
+    //        location.hash=random;
+//        oBj[random]=arr;
+//        oDiv1.innerHTML=arr;
+//    };
+//    window.onhashchange=function () {
+//        var hash=location.hash.substring(1);
+//        if(hash){
+//            oDiv1.innerHTML=oBj[hash];
+//        }else {
+//            oDiv1.innerHTML=''
+//        }
+//    }
+</script>
+</body>
+</html>
