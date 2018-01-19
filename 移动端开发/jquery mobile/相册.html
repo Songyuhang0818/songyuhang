@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="../../jquery%20mobile/jquery.mobile-1.4.5.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html,body{
+            height: 100%;
+        }
+        #container{
+            height: 100%;
+            background: #000;
+        }
+        .img{
+            width: 25%;
+            box-sizing: border-box;
+            border: 5px solid #000;
+            display: block;
+            float: left;
+        }
+        .img img{
+            width: 100%;
+            display: block;
+        }
+        .bigimg{
+            width: 100%;
+            padding: 50% 0;
+            display: none;
+        }
+        .bigimg img{
+            width: 100%;
+            display: block;
+        }
+
+    </style>
+
+</head>
+<body>
+<div id="container">
+    <div id="content">
+
+    </div>
+</div>
+<script src="../../jquery/jquery-1.12.4.js"></script>
+<script src="../../jquery%20mobile/jquery.mobile-1.4.5.js"></script>
+<script>
+    var oContent=document.getElementById('content');
+    for (var i=0;i<24;i++){
+        var oDiv = document.createElement('div');
+        var oBigDiv=document.createElement('div');
+        oBigDiv.className='bigimg';
+        oBigDiv.innerHTML='<img src="img/'+(i+1)+'.jpg" alt="">';
+        oDiv.className = 'img';
+        oDiv.innerHTML='<img src="img/thumbs/'+(i+1)+'.jpg" alt="">';
+        oContent.append(oDiv);
+        oContent.append(oBigDiv);
+
+    }
+    $('.img').on('click',function () {
+        $('.img').toggle();
+        $(this).next().toggle()
+    })
+    $('.bigimg').on('click',function () {
+        $('.img').toggle();
+        $(this).toggle()
+    })
+    $('.bigimg').on('swipeleft',function () {
+        $(this).hide().next().next().show();
+        var i=$(this).index();
+        if(i==47){
+            $('.bigimg:eq(0)').show()
+        }
+    })
+    $('.bigimg').on('swiperight',function () {
+        $(this).hide().prev().prev().show();
+        var i=$(this).index();
+        if(i==1){
+            $('.bigimg:eq(23)').show()
+        }
+    })
+</script>
+</body>
+</html>

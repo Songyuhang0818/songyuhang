@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="../../jquery%20mobile/jquery.mobile-1.4.5.min.css">
+    <style>
+        #div1{
+            background: #00A5FF;
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+<div id="div1"></div>
+<script src="../../jquery/jquery-1.12.4.js"></script>
+<script src="../../jquery%20mobile/jquery.mobile-1.4.5.js"></script>
+<script>
+    $('#div1').on('swipe',function () {
+        console.log("666");
+    });
+    $('#div1').on('swipeleft',function () {
+        console.log("left");
+    });
+</script>
+
+</body>
+</html>
