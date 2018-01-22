@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #ul1{
+            width: 100px;
+            height: 140px;
+            padding: 20px 0;
+            border:1px solid #eee;
+            border-radius: 5px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: none;
+        }
+        #ul1 li{
+            height: 24px;
+            line-height: 24px;
+            text-align: center;
+            color:#555555;
+            font-size: 12px;
+            list-style: none;
+        }
+        #ul1 li:hover{
+            background: deepskyblue;
+
+        }
+    </style>
+
+
+
+
+</head>
+<body>
+  <ul id="ul1">
+      <li>设置待办</li>
+      <li>设为已读</li>
+      <li>置顶邮件</li>
+      <li>添加备注</li>
+      <li>删除邮件</li>
+  </ul>
+  <script>
+      var oUl=document.getElementById("ul1");
+      var aLi=oUl.getElementsByTagName('li');
+      document.oncontextmenu=function (e) {
+          oUl.style.display="block";
+          oUl.style.left=e.clientX+'px';
+          oUl.style.top=e.clientY+'px';
+          return false;
+
+      }
+      document.onclick=function () {
+          oUl.style.display='none';
+      }
+      for(var i=0;i<aLi.length;i++){
+          aLi[i].onclick=function () {
+              console.log(this.innerHTML);
+
+          }
+      }
+  </script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+//    1. 编写一个函数 f(x) = 4x2+3x+2，使用户通过提示对话框瑜入x的值，能得到相应的计算结果。
+//     var x= prompt("请输入x")
+//function f(x) {
+//        return 4*Math.pow(x,2)+3*x+2
+//     }
+//     alert(f(x));
+//    2.  编写一个函数Min(x,y)求出x,y这两个数中的最小值，要求x,y的值由用户通过提示对话框输入。
+
+
+
+
+//    3.编写一个判断某个非负整数是否能够同时被3,5,7整除的函数，
+// 然后在页面上输出1~1000之间所有能同时被3,5,7整除的整数，并要求每行显示6个这样的数。
+//    function a(num) {
+//         return(num>0 &&(parseInt(num)==num) && num%3==0 && num%5==0 && num%7==0);
+//
+//    }
+//    var count=0;
+//     for(var i=1;i<1000;i++){
+//         if(a(i)){
+//             document.write(i+" ");
+//             count++;
+//             if(count%6==0){
+//                 document.write('<br>');
+//             }
+//         }
+//     }
+//     4.在页面上编程输出100~1000之间的所有素数，并要求每行显示6个素数。
+//     function sushu(num) {
+//         for(var i=2;i<=Math.sqrt(num);i++){
+//             if(num%i==0){
+//                 return false;
+//             }
+//         }
+//         return true;
+//     }
+//     var count=0;
+//     for(var i=100;i<1000;i++){
+//         if(sushu(i)){
+//             document.write(i+" ");
+//             count++;
+//             if(count%6==0){
+//                 document.write('<br>');
+//             }
+//         }
+//     }
+
+//5.   编写一个非递归函数factorial(n)，计算12!-10!的结果。
+//6.编写一个带一个参数（指定显示多少层星号“*”的函数，它在页面止输出的一个5层星号“*”图案类似。其中，每行的星号“*”之间有一个空格间隔。
+
+
+//7.斐波纳契（Fibonacci）数列的第一项是1，第二项是1，以后各项都是前两项的和。试用递归函数和非递归函数各编写一个程序，求斐波纳契数列第N项的值。
+//    var n=prompt('shuru n')
+//    function Fib(n) {
+//         if(n<=2){
+//             return 1;
+//         }
+//       return arguments.callee(n-1)+arguments.callee(n-2);
+//   }alert(Fib(n))
+ //非递归
+//    var n=prompt('shuru n')
+//    function Fib(n) {
+//        if(n<=2){
+//            return 1;
+//        }
+//        var arr=[1,1];
+//        for(var i=2;i<n;i++){
+//            arr[i]=arr[i-1]+arr[i-2];
+//        }
+//        return arr[n-1];
+//    }alert(Fib(n))
+
+//    8.编写函数，用下面的公式计算π的近似值。
+//    function Pi(n) {
+//        var sum=0;
+//        for(var i=1;i<=n;i++){
+//            sum +=Math.pow(-1,i-1)/(2*i-1);
+//        }
+//        return sum*4
+//    }
+//    document.write(Pi(100)+"<br>");
+//    document.write(Pi(500)+"<br>");
+//    document.write(Pi(1000)+"<br>");
+//    document.write(Pi(10000000)+"<br>");
+//
+
+
+
+//9.利用全局变量和函数，设计模拟幸运数字机游戏。设幸运数字为8，每次由计算机随机产生3个1-9之间(包括1和9）的随机数，
+// 当这3个随机数中有一个数字为8时，就算赢了一次，要求利用函数计算获胜率。
+    var x,y,z,win,isContinue=true,count=0,wNum=0;
+    function game() {
+        x=Math.floor(Math.random()*9)+1;
+        y=Math.floor(Math.random()*9)+1;
+        z=Math.floor(Math.random()*9)+1;
+        count++;
+        if(x==8||y==8||z==8){
+            win='you win!';
+            wNum++;
+        }else{
+            win='you lose!';
+        }
+    }
+    while(isContinue){
+        game();
+        isContinue=confirm(x+' '+y+' '+z+' '+'\n'+win+'\n'+'获胜率:'+(wNum/count)*100+'%')
+    }
+
+
+
+    </script>
+</body>
+</html>

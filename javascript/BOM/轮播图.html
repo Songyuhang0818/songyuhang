@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul, ol{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+        }
+        img{
+            border: 0;
+            width: 600px;
+            height: 300px;
+            position: absolute;
+        }
+        #container{
+            width: 600px;
+            height: 300px;
+            margin: 50px auto;
+            position: relative;
+        }
+        #btns{
+            overflow: hidden;
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+        }
+        #btns li{
+            float:left;
+            width: 10px;
+            height: 10px;
+            text-align: center;
+            line-height:10px;
+            background:#000;
+            color:#fff;
+            margin-right:5px;
+            font-size: 4px;
+
+        }
+        #btns li:hover{
+            cursor:pointer
+        }
+        #btns li.active{
+            background: #ff6700;
+        }
+        #slide-box{
+            width: 600px;
+            height: 300px;
+        }
+        #slide-box img{
+            display: none;
+        }
+        #slide-box .selected{
+           display: block;
+        }
+        #prev-btn,#next-btn{
+            position: absolute;
+            bottom:10px;
+            width: 10px;
+            height: 10px;
+            line-height: 10px;
+            text-align: center;
+            background: #000000;
+            color:#fff;
+        }
+        #prev-btn{
+            left: 10px;
+        }
+        #next-btn{
+            left: 35px;
+        }
+
+    </style>
+</head>
+<body>
+<div id="container">
+    <div id="slide-box">
+            <img class="selected" src="lb1.jpg" alt="">
+            <img src="lb2.jpg" alt="">
+            <img src="lb3.jpg" alt="">
+            <img src="lb4.jpg" alt="">
+        <ul id="btns">
+            <li class="active">1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+        </ul>
+        <span id="prev-btn">&lt;</span>
+        <span id="next-btn">&gt;</span>
+    </div>
+</div>
+<script>
+    var oContainer=document.getElementById('container');
+    var aLi=document.getElementsByTagName('li');
+    var oSlidebox=document.getElementById('slide-box');
+    var aImg=oSlidebox.getElementsByTagName('img');
+    var oNextbtn=document.getElementById('next-btn');
+    var oPrevbtn=document.getElementById('prev-btn');
+    var iNow=0;
+    for(var i=0;i<aLi.length;i++){
+        aLi[i].index=i;
+        aLi[i].onmouseover=function () {
+            for(var j=0;j<aLi.length;j++){
+                aLi[j].className='';
+                aImg[j].className='';
+            }
+            iNow=this.index;
+            this.className='active';
+            aImg[this.index].className='selected';
+        }
+    }
+
+    oNextbtn.onclick=function () {
+        iNow++;
+        if (iNow >= aImg.length) {
+            iNow = 0;
+        }
+        for (var j = 0; j < aLi.length; j++) {
+            aLi[j].className = '';
+            aImg[j].className = '';
+
+        }
+
+        aLi[iNow].className = 'active';
+        aImg[iNow].className = 'selected';
+    };
+        oPrevbtn.onclick = function () {
+            iNow--;
+            if (iNow <= -1) {
+                iNow = aLi.length - 1;
+            }
+            for (var j = 0; j < aLi.length; j++) {
+                aLi[j].className = '';
+                aImg[j].className = '';
+
+            }
+            aLi[iNow].className = 'active';
+            aImg[iNow].className = 'selected';
+
+
+        };
+        var timer;
+        run();
+
+        oContainer.onmouseover = function () {
+            clearInterval(timer)
+        };
+        oContainer.onmouseout = function () {
+            run();
+        };
+        function run() {
+            timer = setInterval(function () {
+                oNextbtn.onclick();
+            }, 1000);
+
+        }
+
+</script>
+
+</body>
+</html>

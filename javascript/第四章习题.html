@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //4.2
+//    var age=prompt('请输入年龄');
+//    if(age<14){
+//        document.write('儿童');
+//    }else if(age>=14 && age<24){
+//        document.write('青少年');
+//    }else if(age>=24 && age<40){
+//        document.write('青年');
+//    }else if(age>=40 && age<60){
+//        document.write('中年');
+//    }else if(age>=60){
+//        document.write('老年');
+//    }
+//    4.3
+    function num(a) {
+        var sum=1;
+        for(var i=1;i<=a;i++){
+            sum*=i;
+        }
+        return sum;
+    }num(10);
+    console.log(num(10));
+//    递归
+//    function fac(n) {
+//        if(n==1){
+//            return 1;
+//        }
+//        return n*fac(n-1);
+//    }
+//    console.log(fac(10));
+//    4.4
+//    递归
+//     function fac(n) {
+//            if(n==1){
+//                return 1;
+//            }
+//            return n*fac(n-1);
+//        }
+//    var sum=0;
+//    for (var i=1;i<=10;i++){
+//        sum+=fac(i);
+//    }
+//    console.log(sum);
+    function num(a) {
+        var sum=1;
+        for(var i=1;i<=a;i++){
+            sum*=i;
+        }
+        return sum;
+    }num(10);
+    console.log(num(10));
+//    4.5
+//    function aa(n) {
+//        for(var i=1;i<=n;i++){
+//            for(j=1;j<=i;j++){
+//                document.write(j+"&nbsp");
+//            }
+//            document.write("<br>");
+//        }
+//    }
+//    aa(9);
+
+//4.6
+//    function aa(n) {
+//        for(var i=1;i<=n;i++){
+//            for(j=1;j<=n-i;j++){
+//                document.write('&nbsp');
+//            }
+//            for(j=1;j<=i;j++){
+//                document.write('*'+"&nbsp");
+//            }
+//            document.write("<br>");
+//        }
+//    }
+//    aa(9);
+    //4.7
+//    var x
+//        for(x=1;x<=1000;x++){
+//            if( x%4==2 && x%7==3 && x%9==5){
+//                document.write("x="+x+"<br>");
+//            }
+//        }
+
+//4.8
+    var num=0;
+    for(var i=1000;i<=9999;i++){
+        if(i%13==0&&Math.floor(i/1000)==(Math.floor(i%1000/100)+Math.floor(i%100/10))){
+            document.write(i+" ");
+            num+=1;
+            if(num==5){
+                document.write("<br>");
+                num=0;
+            }
+        }
+    }
+
+
+</script>
+
+</body>
+</html>

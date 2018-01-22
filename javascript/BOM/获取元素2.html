@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div id="div1">
+        hahahahahahaha
+    </div>
+    <ul id="ul1">
+        <li class="aaaaa">000</li>
+        <li>111</li>
+        <li class="aa bb">222</li>
+        <li class="aa">333</li>
+    </ul>
+    <ul id="ul2">
+        <li>444</li>
+        <li>555</li>
+        <li>666</li>
+        <li>777</li>
+    </ul>
+    <script>
+        function  getEleByClassName(clsName,context) {
+            var result=[];
+            var parentEle=context||document;
+            var allEle=parentEle.getElementsByTagName("*");
+            for(var i=0;i<allEle.length;i++){
+                var arr=allEle[i].className.split(" ");
+                for(var j=0;j<arr.length;j++){
+                    if(arr[j]==clsName){
+                        result.push(allEle[i]);
+                    }
+                }
+            }
+            return result;
+        }
+            var oUl1=document.getElementById('ul1');
+            var aA=getEleByClassName('aa',oUl1);
+            for(var j=0;j<aA.length;j++){
+                aA[j].style.background="yellow";
+            }
+
+
+    </script>
+
+</body>
+</html>
