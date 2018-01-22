@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a4dbaab7-74e3-43e7-a7a0-310229aea1b5" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/1-test.html" afterPath="$PROJECT_DIR$/ES6/1-test.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -393,7 +392,7 @@
       <workItem from="1516176907815" duration="22134000" />
       <workItem from="1516335100025" duration="26150000" />
       <workItem from="1516593382770" duration="599000" />
-      <workItem from="1516599709769" duration="952000" />
+      <workItem from="1516599709769" duration="989000" />
     </task>
     <task id="LOCAL-00001" summary="yici">
       <created>1506226070630</created>
@@ -528,11 +527,18 @@
       <option name="project" value="LOCAL" />
       <updated>1516584624426</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="小米官网">
+      <created>1516600675797</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1516600675797</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="456078000" />
+    <option name="totallyTimeSpent" value="456115000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -544,7 +550,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1" y="1" width="1364" height="726" extended-state="0" />
+    <frame x="1" y="1" width="1364" height="726" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23516321" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
