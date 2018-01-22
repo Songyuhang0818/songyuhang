@@ -1,0 +1,368 @@
+
+#home-rewards{
+    /*height: 220px;*/
+    background: #0f0f0f;
+}
+.container{
+    width: 750px;
+    margin: 0 auto;
+    overflow: hidden;
+    /*height: 100%;*/
+}
+.rewards-mark{
+    width: 260px;
+    height: 145px;
+    background:  #0f0f0f url("img/rewards_bg.png") 0 0 no-repeat;
+    background-size: contain;
+    float: left;
+    padding: 75px 0 0 60px;
+}
+.rewards-content{
+    width: 430px;
+    float: right;
+    height: 100%;
+}
+.rewards-mark p{
+    color: #fff;
+    font-size: 18px;
+}
+.rewards-mark img{
+    width: 160px;
+}
+.rewards-content h3{
+    font-size: 25px;
+    color: #fff;
+    margin-top: 40px;
+}
+.rewards-content p{
+    font-size: 16px;
+    color: #fff;
+}
+.rewards-btns{
+    margin-top: 20px;
+}
+.rewards-btns .btns{
+    width: 114px;
+    height: 50px;
+    border:1px solid #b89f7a;
+    background: #000000;
+    text-align: center;
+    line-height: 50px;
+    color:#b89f7a;
+    float: left;
+    margin-right: 20px;
+}
+.rewards-btns .btns:hover{
+    background: #b89f7a;
+    color: #ffffff;
+}
+.rewards-btns .btns-konwmore{
+    font-size: 14px;
+    color:#b89f7a ;
+    margin-left: 30px;
+    line-height: 52px;
+}
+#app{
+    background:#efebe8 url(img/app-web.png) 0 0 no-repeat;
+    background-size:contain;
+    padding-top:23% ;
+    position: relative;
+    /*height: 300px;*/
+
+}
+
+#app img{
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    left:41%;
+    top:50%;
+    -webkit-transform: translateY(-50%);
+}
+.app-text{
+    width:35%;
+    position: absolute;
+    left:41%;
+    top:50%;
+    /*-webkit-transform: translateY(-50%);*/
+    -webkit-transform:  translateY(-50%) translateX(147px);
+
+}
+.app-text p{
+    font-size: 18px;
+    line-height: 28px;
+    color: #3d3d3d;
+    margin-bottom: 10px;
+
+}
+.app-text a{
+    color: #b89f7a;
+    font-size: 16px;
+}
+.btns{
+    display: none;
+}
+#mosaic{
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+}
+#mosaic .product{
+    position: relative;
+    display: block;
+    width: 50%;
+    float: left;
+}
+#mosaic img{
+    width: 100%;
+    height: auto;
+}
+#mosaic .tmalltext{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    text-align: center;
+}
+#mosaic h3{
+    font-weight: 900;
+    font-size: 13px;
+    line-height: 22px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #000000;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+#mosaic h2{
+    letter-spacing: normal;
+    font-size: 30px;
+    font-weight: 400;
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+    text-align: center;
+    line-height: 38px;
+    color: #D81026
+}
+#wsg{
+    background: #106e4b;
+    max-width: 100%;
+}
+#wsg #wsg-container{
+    padding: 30px 0;
+    /*width: 767px;*/
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*flex-direction: column;*/
+    flex-wrap: wrap;
+}
+#wsg .wsg-con-block{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*flex-direction: column;*/
+}
+#wsg .wsg-item{
+    margin: 0 25px;
+    box-sizing: border-box;
+}
+#wsg .img1{
+    width: 250px;
+    height: 127.5px;
+    background: url(img/wsg-title.png) center/contain no-repeat;
+}
+#wsg .img2{
+    width: 150px;
+    height: 150px;
+    background: url(img/wsg-qrcode.png) center/contain no-repeat;
+}
+#wsg .img3{
+    width: 150px;
+    height: 162px;
+    background: url(img/wsg-cup.png) center/contain no-repeat;
+}
+#wsg .img4{
+    width: 280px;
+    height: 142.8px;
+    background: url(img/wsg-wording.png) center/contain no-repeat;
+}
+#apple-watch-web{
+    display: block;
+    width: 100%;
+    height: 220px;
+    text-align: center;
+    background: url(img/web-bg.png) repeat-x;
+}
+#watch-image{
+    display: inline-block;
+    vertical-align: top;
+    width: 408px;
+    height: 220px;
+    background: url(img/web-iwatch-cn.png) center/contain no-repeat;
+}
+#app-download{
+    display: inline-flex;
+    vertical-align: top;
+    padding-top: 35px;
+    padding-left: 20px;
+    margin: 0;
+}
+#watch-intro{
+    display: inline-block;
+
+}
+#app-download-qr{
+    background: url(img/wsg-qrcode.png) center/contain no-repeat;
+}
+@media screen and (max-width: 767px) {
+    .rewards-mark,.rewards-content{
+        width: 100%;
+    }
+    #home-rewards{
+        padding: 0 35px;
+    }
+    .rewards-mark{
+        padding: 55px 0 0 0;
+        text-align: center;
+        height: 85px;
+    }
+    .container{
+        width: 100%;
+    }
+    .rewards-content{
+        text-align: center;
+    }
+    .rewards-content h3{
+        margin-bottom: 10px;
+    }
+    .rewards-btns {
+        margin-top: 40px;
+    }
+    .rewards-btns .btns{
+        width: 80%;
+        float: none;
+        display: block;
+        margin:0 auto 10px;
+    }
+    .rewards-btns .btns-konwmore{
+        margin-left: 0px;
+        margin-right: 7px;
+        padding: 25px 0;
+        text-align: right;
+        display: block;
+    }
+    #app{
+        background-image: url(img/app-mobile.png);
+        padding-top:98% ;
+
+    }
+    #app img{
+        display: none;
+    }
+    .app-text{
+        width: 92%;
+        padding: 4%;
+        position: static;
+        -webkit-transform:  translateY(0) translateX(0);
+        text-align: center;
+
+
+    }
+    .app-text p{
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .btns{
+        display: block;
+        width: 220px;
+        height: 80px;
+        margin:10px auto 0;
+        background: url("img/appbtns.svg") center center no-repeat;
+    }
+    #mosaic .product{
+        float: none;
+        width: 100%;
+    }
+    #wsg .container{
+        padding-left: 35px;
+        padding-right: 35px;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+    #wsg #wsg-container{
+        max-width: 100%;
+    }
+    #wsg .wsg-con-block {
+        width: 100%;
+        display: block;
+        padding: 5px 0;
+        text-align: center;
+        position: relative;
+        box-sizing: border-box;
+    }
+    #wsg .wsg-item{
+        margin: 0;
+    }
+    #wsg .img1{
+        width: 150px;
+        height: 162px;
+        background: url(img/wsg-cup.png) center/contain no-repeat;
+        display: inline-block;
+        position: relative;
+        left: -5px;
+    }
+    #wsg .img2{
+        width: 150px;
+        height: 76.5px;
+        background: url(img/wsg-title.png) center/contain no-repeat;
+        display: inline-block;
+        position: relative;
+        top: -40px;
+    }
+    #wsg .img3{
+        width: 120px;
+        height: 120px;
+        background: url(img/wsg-qrcode.png) center/contain no-repeat;
+        display: inline-block;
+        position: relative;
+        right: -5px;
+    }
+    #wsg .img4{
+        width: 180px;
+        height: 91.8px;
+        background: url(img/wsg-wording.png) center/contain no-repeat;
+        display: inline-block;
+        position: relative;
+        top: -13px;
+        right: -10px;
+    }
+}
+@media screen and (max-width: 374px) {
+    #wsg .img1{
+        width: 120px;
+        height: 130px;
+    }
+    #wsg .img2{
+        width: 120px;
+        height: 61.2px;
+        top: -35px;
+    }
+    #wsg .img3{
+        width: 90px;
+        height: 90px;
+    }
+    #wsg .img4{
+        width: 150px;
+        height: 76.5px;
+        top: -5px;
+        right: -15px;
+    }
+}
