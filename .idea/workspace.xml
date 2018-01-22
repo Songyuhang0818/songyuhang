@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a4dbaab7-74e3-43e7-a7a0-310229aea1b5" name="Default" comment="" />
+    <list default="true" id="a4dbaab7-74e3-43e7-a7a0-310229aea1b5" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/1-test.html" afterPath="$PROJECT_DIR$/ES6/1-test.html" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -46,11 +48,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/移动端开发/starbucks/index.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="19">
               <caret line="176" column="11" lean-forward="false" selection-start-line="176" selection-start-column="11" selection-end-line="176" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="1-test.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ES6/1-test.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="19">
+              <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -108,7 +120,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/jquery练习/11侧向导航.html" />
         <option value="$PROJECT_DIR$/jquery练习/5表单验证/5表单验证.html" />
         <option value="$PROJECT_DIR$/jquery练习/12网页换肤.html" />
         <option value="$PROJECT_DIR$/小米官网/js/javascript.js" />
@@ -159,6 +170,7 @@
         <option value="$PROJECT_DIR$/移动端开发/starbucks/css.css" />
         <option value="$PROJECT_DIR$/移动端开发/starbucks/starbucks.html" />
         <option value="$PROJECT_DIR$/移动端开发/starbucks/index.css" />
+        <option value="$PROJECT_DIR$/ES6/1-test.html" />
       </list>
     </option>
   </component>
@@ -203,6 +215,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="songyuhang" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="songyuhang" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="songyuhang" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ES6" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -366,7 +392,7 @@
       <workItem from="1516176907815" duration="22134000" />
       <workItem from="1516335100025" duration="26150000" />
       <workItem from="1516593382770" duration="599000" />
-      <workItem from="1516599709769" duration="136000" />
+      <workItem from="1516599709769" duration="451000" />
     </task>
     <task id="LOCAL-00001" summary="yici">
       <created>1506226070630</created>
@@ -505,7 +531,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="455262000" />
+    <option name="totallyTimeSpent" value="455577000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -518,7 +544,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1" y="1" width="1364" height="726" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23516321" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328594" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -555,13 +581,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/css3/1-test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="54" lean-forward="false" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css3/上下固定50 中间自适应.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
@@ -891,6 +910,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
           <caret line="176" column="11" lean-forward="false" selection-start-line="176" selection-start-column="11" selection-end-line="176" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ES6/1-test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
         </state>
       </provider>
