@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a4dbaab7-74e3-43e7-a7a0-310229aea1b5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/移动端开发/starbucks/starbucks.html" afterPath="$PROJECT_DIR$/移动端开发/starbucks/starbucks.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -186,6 +186,22 @@
     <option name="width" value="1364" />
     <option name="height" value="726" />
   </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>AngularJS</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -243,21 +259,21 @@
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+    <property name="settings.editor.selected.configurable" value="reference.idesettings.emmet" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Users\dell\WebstormProjects\songyuhang\移动端开发\jquery mobile" />
-      <recent name="D:\Users\dell\WebstormProjects\songyuhang\html5\响应式" />
-      <recent name="D:\Users\dell\WebstormProjects\songyuhang" />
-      <recent name="D:\Users\dell\WebstormProjects\songyuhang\整站开发\img" />
-      <recent name="D:\Users\dell\WebstormProjects\songyuhang\css3\旋转合并的照片墙" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Users\dell\WebstormProjects\songyuhang\移动端开发\starbucks\img" />
       <recent name="D:\Users\dell\WebstormProjects\songyuhang\jquery mobile" />
       <recent name="D:\Users\dell\WebstormProjects\songyuhang\移动端开发" />
       <recent name="D:\Users\dell\WebstormProjects\songyuhang\html5\响应式" />
+      <recent name="D:\Users\dell\WebstormProjects\songyuhang\css3\旋转合并的照片墙" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Users\dell\WebstormProjects\songyuhang\移动端开发\jquery mobile" />
+      <recent name="D:\Users\dell\WebstormProjects\songyuhang\html5\响应式" />
+      <recent name="D:\Users\dell\WebstormProjects\songyuhang" />
+      <recent name="D:\Users\dell\WebstormProjects\songyuhang\整站开发\img" />
       <recent name="D:\Users\dell\WebstormProjects\songyuhang\css3\旋转合并的照片墙" />
     </key>
   </component>
@@ -392,7 +408,7 @@
       <workItem from="1516176907815" duration="22134000" />
       <workItem from="1516335100025" duration="26150000" />
       <workItem from="1516593382770" duration="599000" />
-      <workItem from="1516599709769" duration="989000" />
+      <workItem from="1516599709769" duration="2264000" />
     </task>
     <task id="LOCAL-00001" summary="yici">
       <created>1506226070630</created>
@@ -538,7 +554,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="456115000" />
+    <option name="totallyTimeSpent" value="457390000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -550,8 +566,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1" y="1" width="1364" height="726" extended-state="1" />
-    <editor active="true" />
+    <frame x="1" y="1" width="1364" height="726" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23516321" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328594" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />

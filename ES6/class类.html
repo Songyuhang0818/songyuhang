@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    class Person{
+        constructor (name,age){
+            this.name=name;
+            this.age=age;
+        }
+        say(){
+            console.log('mynameis'+this.name)
+        }
+        static aa(){
+            console.log('kobe is never lose');
+        }
+    
+    }
+    class Child extends Person{
+        constructor(name,age,hobby){
+            super(name,age); 
+            this.hobby=hobby;
+        }
+         play(){
+             console.log('playbasketball'+this.name)
+         }  
+    }
+    let p1=new Person("kobe",38);
+    p1.say();
+    let westbrook=new Child("westbrook",28,"basketball")
+    westbrook.say();
+    westbrook.play();
+    Person.aa();
+    Child.aa();
+    </script>
+    
+</body>
+</html>
