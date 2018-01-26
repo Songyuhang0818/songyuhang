@@ -67,7 +67,7 @@
 /* 0 */
 /***/ (function(module, exports) {
 
-document.write('hahahaha');
+document.write('dfsdfsdgsfgdg');
 
 /***/ })
 /******/ ]);
