@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    ul{
+        list-style: none;
+    }
+    #app{
+        width: 300px;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+    h2{
+        text-align: center
+    }
+    #div1 li{
+        width: 200px;
+        height: 40px;
+        background: #0f0;
+        margin-bottom: 10px;
+        line-height:40px;
+        text-align: justify;
+        padding:0 10px;
+    }
+    #div1 .bg{
+        background: red;
+    }
+    #div1 span{
+        float: right;
+    }
+    #span1{
+        width: 280px;
+        height: 2px;
+        background: #bbb;
+        display: block;
+    }
+    #total{
+        padding: 10px 0;
+        width: 280px;
+    }
+    #sum{
+        float: right
+    }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <h2>services</h2>
+        <div id="div1">
+            <ul>
+                <li v-for="obj in arr" @click="fn(obj)" :class="{bg:obj.isBg}">
+                    {{obj.name}}
+                    <span>{{obj.price}}</span>
+                </li>
+            </ul>
+        </div>
+        <span id="span1"></span>
+        <div id="total">
+            <span>total:</span>
+            <span id="sum">{{num}}</span>
+        </div>
+    </div>
+    <script src="vue.js"></script>
+    <script>
+        var vm=new Vue({
+            el:"#app",
+            data:{
+                arr:[
+                   {name:"aaa",price:234,isBg:false},
+                   {name:"bbb",price:424,isBg:false},
+                   {name:"ccc",price:564,isBg:false},
+                   {name:"ddd",price:214,isBg:false},
+                   {name:"eee",price:984,isBg:false}
+                ],
+                num:0,
+            },
+            methods:{
+                fn:function(o){
+                   o.isBg=!o.isBg;
+                if(o.isBg){
+                    this.num+=o.price;
+                }else{
+                    this.num-=o.price;
+                }
+                },
+               
+            }
+        })
+    </script>
+</body>
+</html>
