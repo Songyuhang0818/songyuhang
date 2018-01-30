@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a4dbaab7-74e3-43e7-a7a0-310229aea1b5" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vue/购物车/cart.html" afterPath="$PROJECT_DIR$/vue/购物车/cart.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -482,7 +481,7 @@
       <workItem from="1516335100025" duration="26150000" />
       <workItem from="1516593382770" duration="599000" />
       <workItem from="1516599709769" duration="2264000" />
-      <workItem from="1517290632719" duration="1263000" />
+      <workItem from="1517290632719" duration="1320000" />
     </task>
     <task id="LOCAL-00001" summary="yici">
       <created>1506226070630</created>
@@ -624,11 +623,18 @@
       <option name="project" value="LOCAL" />
       <updated>1516600675797</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="20180130">
+      <created>1517295069166</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1517295069166</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="458653000" />
+    <option name="totallyTimeSpent" value="458710000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -640,7 +646,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1" y="1" width="1364" height="726" extended-state="0" />
+    <frame x="1" y="1" width="1364" height="726" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23516321" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -671,7 +677,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="yici" />
     <MESSAGE value="小米官网" />
-    <option name="LAST_COMMIT_MESSAGE" value="小米官网" />
+    <MESSAGE value="20180130" />
+    <option name="LAST_COMMIT_MESSAGE" value="20180130" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
