@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .sign{
+        background: rgb(209, 207, 207);
+        width: 400px;
+        height: 300px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        top: 50%
+    }
+    .sign span{
+        width: 20px;
+        height: 20px;
+        float: right;
+        background: rgb(247, 248, 247);
+        text-align: center;
+        line-height: 20px;
+        font-size:15px; 
+    }
+    h2{
+        border-bottom: 1px solid #000;
+        padding: 0 10px
+    }
+   
+    </style>
+</head>
+<body>
+    <div id="app">
+        <button id="signin" @click="fn()">登录</button>
+        <button id="signup" @click="up()">注册</button>
+        <demo v-show="msg==1"@close="close()">
+            <h2 >登录</h2>
+            用户名:<input type="text"></br>
+            密码:<input type="password"></br>
+        </demo>
+        <demo v-show="msg==2">
+            <h2 >注册</h2>
+            用户名:<input type="text"></br>
+            密码:<input type="password"></br>
+            确认密码:<input type="password"></br>
+        </demo>
+    </div>
+    <script src="vue.js"></script>
+    <script type="text/x-template" id="temp">
+        <div>
+            <div class="sign" >
+                <span @click="$emit('close')">X</span>    
+                <slot></slot>
+            </div>
+         </div>
+    </script>
+    <script>
+        var vm=new Vue({
+            el:"#app",
+            data:{
+                msg:0,
+            },
+            components:{
+                demo:{
+                    template:'#temp',
+                    props:['title',]
+                }
+            },
+            methods:{
+                fn(){
+                    this.msg=1;
+                },
+                up(){
+                    this.msg=2;
+                },
+                close(){
+                    this.msg=0;
+                }
+                
+            }
+        })
+    </script>
+</body>
+</html>
