@@ -1,23 +1,20 @@
 <template>
     <div>
-        <top></top>
         <h2>Photo</h2>
         <h2>Photo</h2>
         <h2>Photo</h2>
         <h2>Photo</h2>
-        <bottom></bottom>
     </div>
 </template>
 
 <script>
-    import top from '@/components/common/Top'
-    import bottom from '@/components/common/Bottom'
+   
     export default {
-
-        components:{
-            top,
-            bottom
+         mounted:function(){
+            this.$store.commit('change','rgb(61,68,90)');
+            this.$store.commit('titleChange','Photo');
         }
+      
     }
 </script>
 
