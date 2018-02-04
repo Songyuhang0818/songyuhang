@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a4dbaab7-74e3-43e7-a7a0-310229aea1b5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vue/弹出层.html" afterPath="$PROJECT_DIR$/vue/弹出层.html" />
-    </list>
+    <list default="true" id="a4dbaab7-74e3-43e7-a7a0-310229aea1b5" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -464,7 +462,7 @@
       <workItem from="1516599709769" duration="2264000" />
       <workItem from="1517290632719" duration="2407000" />
       <workItem from="1517297972922" duration="4190000" />
-      <workItem from="1517366190662" duration="3120000" />
+      <workItem from="1517366190662" duration="3137000" />
     </task>
     <task id="LOCAL-00001" summary="yici">
       <created>1506226070630</created>
@@ -617,7 +615,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="467107000" />
+    <option name="totallyTimeSpent" value="467124000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
