@@ -1,7 +1,7 @@
 <template>
-      <div class="movieList">
+    <div class="movieList">
         <ul>
-            <li v-for="(obj,index) in movies" :key="index">
+            <li v-for="(obj,index) in movies" :key="index" @click="fn(obj.id)">
                 <div class="img-box">
                     <img :src="obj.img" alt="">
                 </div>
@@ -17,7 +17,7 @@
             <!-- <img src="@/assets/images/loading.gif" alt=""> -->
         </div>
         <div class="end" v-show="isEnd">
-            已经到底了~~
+            已经到底了
         </div>
     </div>
 </template>
@@ -25,12 +25,12 @@
 <script>
     import axios from 'axios';
     export default {
-         data() {
+        data() {
             return {
                 movies:[],
                 isLoad:true,
-                isEnd:false,
-                flag:true,
+                isEnd: false,
+                flag:true
             }
         },
         methods:{
@@ -38,43 +38,50 @@
                 if(this.flag){
                     this.flag = false;
                     axios.get(API_INTERFACE+'http://m.maoyan.com/movie/list.json?type=hot&offset='+this.movies.length+'&limit=10').then((res)=>{
-                        if(res.data.data.movies.length < 10){
+                        if(res.data.data.movies<10){
                             this.isEnd = true;
                         }
-                    this.movies = [...this.movies,...res.data.data.movies];
-                    this.isLoad=false;
-                    this.flag=true;
-            }).catch(()=>{
-           
-                });
+                        console.log(res.data.data.movies);
+                        this.movies = [...this.movies,...res.data.data.movies];
+                        this.isLoad = false;
+                        this.flag = true;
+                    }).catch(()=>{
+                        console.log('请求失败');
+                    });
                 }
-            
+                
+            },
+            fn(id){
+                this.$router.push('/movieDetail/'+id);
             }
         },
         mounted:function(){
-            this.$store.commit('change','rgb(33, 150, 243)');
+            //改变footer top 颜色 标题
+            this.$store.commit('change','rgb(33, 150, 243)')
             this.$store.commit('titleChange','Movie');
+            //axios请求
             this.load();
-            window.onscroll = () =>{
-                //滚动条滚动高度（页面上）
+
+            window.onscroll = ()=>{
                 var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-                //可视区高度
                 var clientHeight = document.documentElement.clientHeight;
-                //整个页面的高度
                 var scrollHeight = document.documentElement.scrollHeight;
-                if(scrollTop+clientHeight==scrollHeight){
+                // console(scrollTop,clientHeight ,scrollHeight);
+                if(scrollTop + clientHeight == scrollHeight){
                     if(!this.isEnd){
+                        this.isLoad = true;
                         this.load();
-                        this.isLoad=true;
                     }
+                    
                 }
             }
+
         }
-    } 
+    }
 </script>
 
 <style scoped>
- .movieList li{
+    .movieList li{
         display: flex;
         padding: 0.2rem;
         border-bottom:0.02rem solid #ccc;
@@ -100,4 +107,11 @@
     .info-box p{
         font-size: 0.27rem;
     }
+    .load{
+        text-align:center;
+    }
+    .end{
+        text-align:center;
+    }
+
 </style>
